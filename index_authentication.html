@@ -16,7 +16,8 @@
     </div>
 
     <div class="panel">
-        <form>
+
+        <form id="signUp_form">
             <label for="username">Username</label>
             <input name="username" id="username" value="ex.sexybenfranklin" type="text"/>
             <br/>
@@ -28,6 +29,7 @@
 
             <button type="submit">Regester</button>
         </form>
+
     </div>
 
     <div class="under_panel">
@@ -40,10 +42,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script>
     $(function(){
+
         var placeholder_val = ["ex.sexybenfranklin@mail.ca", "ex.sexybenfranklin", "ex.GoBanTalking"];
         var default_val = $("input").val();
 
-        $("input").focus(function(){
+//        FOCUS BLUR, values update
+
+        $("input").focus(function(e){
+            e.preventDefault();
             default_val = $(this).val();
             console.log(default_val);
             var check = $.inArray(default_val, placeholder_val);
@@ -53,7 +59,8 @@
                 $(this).val("");
             }
 
-        }).blur(function(){
+        }).blur(function(j){
+            j.preventDefault();
             if(!$(this).val()) {
                 $(this).val(default_val);
 
@@ -61,12 +68,57 @@
                 $(this).css({
                     fontFamily: "Roboto-Regular",
                     color: "#444",
-                    fontSize: "1em"
+                    fontSize: "1em",
+                    borderBottom: "1px solid rgba(66, 174, 155, 0.7)"
                 });
             }
         });
 
+//       CHECK FOR VALUES than SUBMIT
+
+        $("#signUp_form").submit(function(e){
+
+            var  name = $("input[type='text']").val();
+            var  email = $("input[type='email']").val();
+            var  passw = $("input[type='password']").val();
+            var present_values = [name, email, passw];
+
+            var check = [];
+
+                for (e = 0; e < 3; e++) {
+                    if ($.inArray(present_values[e], placeholder_val) >= 0) {
+                        check.push(1);
+                    } else {
+                        check.push(0);
+                    }
+                }
+
+            if(check[0]===1){
+                $("#username").css("border-bottom", "1px solid #FF2424");
+                $("#username").focus();
+            }else
+            if(check[1]===1){
+                $("#email").css("border-bottom", "1px solid #FF2424");
+                $("#email").focus();
+            }else
+            if(check[2]===1){
+                $("#password").css("border-bottom", "1px solid #FF2424");
+                $("#password").focus();
+            }
+
+
+            if($.inArray(1, check) === -1){
+                console.log("form to submit");
+                return true;
+            }else{
+                console.log("nope form is not ready");
+                return false;
+            }
+
+        });
+
     });
+
 </script>
 
 </body>
