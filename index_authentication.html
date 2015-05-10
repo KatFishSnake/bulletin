@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>LogIn/SignUp</title>
+    <link rel="stylesheet" type="text/css" href="Style/Main_style.css"/>
+</head>
+<body class="authentication_register">
+
+
+<div class="auth_wrapper">
+    <div class="auth_logo"></div>
+
+    <div class="panel_header">
+        <h2>Registration</h2>
+    </div>
+
+    <div class="panel">
+        <form>
+            <label for="username">Username</label>
+            <input name="username" id="username" value="ex.sexybenfranklin" type="text"/>
+            <br/>
+            <label for="email">E-mail</label>
+            <input name="email" id="email" value="ex.sexybenfranklin@mail.ca" type="email"/>
+            <br/>
+            <label for="password">Password</label>
+            <input name="passward" class="password" id="password" value="ex.GoBanTalking" type="password"/>
+
+            <button type="submit">Regester</button>
+        </form>
+    </div>
+
+    <div class="under_panel">
+        <p class="under_panel_firstLine"><a href="javascript:void(0)">Log In</a>/<a href="javascript:void(0)">Retrieve the password</a></p>
+        <p class="under_panel_secondLine"><a href="javascript:void(0)"><-- Home page</a></p>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    $(function(){
+        var placeholder_val = ["ex.sexybenfranklin@mail.ca", "ex.sexybenfranklin", "ex.GoBanTalking"];
+        var default_val = $("input").val();
+
+        $("input").focus(function(){
+            default_val = $(this).val();
+            console.log(default_val);
+            var check = $.inArray(default_val, placeholder_val);
+
+            if(check>=0) {
+                console.log("its the value from the array");
+                $(this).val("");
+            }
+
+        }).blur(function(){
+            if(!$(this).val()) {
+                $(this).val(default_val);
+
+            }else{
+                $(this).css({
+                    fontFamily: "Roboto-Regular",
+                    color: "#444",
+                    fontSize: "1em"
+                });
+            }
+        });
+
+    });
+</script>
+
+</body>
+</html>

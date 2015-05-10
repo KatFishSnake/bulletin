@@ -1,0 +1,137 @@
+.authentication_register {
+  background: whitesmoke;
+  padding-top: 150px; }
+  .authentication_register .auth_logo {
+    width: 200px;
+    height: 35px;
+    background: transparent url("../Materials/Materials.gif") 50% 0% no-repeat;
+    background-size: 100%;
+    margin: 0 auto 80px auto;
+    opacity: 0.3; }
+  .authentication_register .panel {
+    background: white;
+    padding: 30px 20px 0 30px;
+    margin: 0;
+    height: 370px;
+    -webkit-border-radius: 2pt;
+    -moz-border-radius: 2pt;
+    -ms-border-radius: 2pt;
+    border-radius: 2pt;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -ms-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+    -webkit-box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1); }
+    .authentication_register .panel label {
+      display: block;
+      color: rgba(0, 0, 0, 0.4);
+      margin-top: 5px; }
+      .authentication_register .panel label:nth-child(7) {
+        margin-top: 30px; }
+    .authentication_register .panel input {
+      margin: 5px 0 15px 0;
+      width: 89%;
+      padding: 10px;
+      font-family: Roboto-Light-Italic;
+      outline: none;
+      border: none;
+      box-shadow: none;
+      color: rgba(0, 0, 0, 0.4);
+      font-size: 1em;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+      .authentication_register .panel input:focus {
+        font-family: Roboto-Regular;
+        color: #444;
+        font-size: 1em;
+        border-bottom: 1px solid rgba(66, 174, 155, 0.7); }
+    .authentication_register .panel .password {
+      font-family: Roboto-Bold;
+      font-size: 1.7em;
+      color: rgba(0, 0, 0, 0.2);
+      height: 19px; }
+    .authentication_register .panel button {
+      float: right;
+      border: none;
+      padding: 8px 22px;
+      color: white;
+      background: #42ae9b;
+      font-family: Roboto-Light;
+      margin: 35px 15px 0 0;
+      -webkit-border-radius: 2pt;
+      -moz-border-radius: 2pt;
+      -ms-border-radius: 2pt;
+      border-radius: 2pt; }
+      .authentication_register .panel button:hover {
+        background: #46c6b2; }
+      .authentication_register .panel button:active {
+        background: #39816f; }
+  .authentication_register .auth_wrapper {
+    width: 350px;
+    margin: 0 auto; }
+  .authentication_register .panel_header {
+    padding: 13px 20px 13px 30px;
+    background: white;
+    margin-bottom: 20px;
+    border-left: 6px solid #42ae9b;
+    -webkit-border-radius: 2pt;
+    -moz-border-radius: 2pt;
+    -ms-border-radius: 2pt;
+    border-radius: 2pt;
+    -webkit-box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1); }
+    .authentication_register .panel_header h2 {
+      font-family: Roboto-Regular;
+      font-size: 0.9em;
+      letter-spacing: 0.4px;
+      color: #444; }
+
+.under_panel {
+  padding-left: 15px;
+  line-height: 0.5em;
+  color: #888888; }
+  .under_panel a {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #888888; }
+    .under_panel a:hover {
+      text-decoration: underline; }
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("../libs/fonts/Roboto-Bold.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../libs/fonts/Roboto-Medium.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Roboto-Light-Italic;
+  src: url("../libs/fonts/Roboto-LightItalic.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Roboto-Italic;
+  src: url("../libs/fonts/Roboto-Italic.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Roboto-Light;
+  src: url("../libs/fonts/Roboto-Light.ttf");
+  font-weight: normal;
+  font-style: normal; }
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto-Regular; }
+
+/*# sourceMappingURL=Main_style.css.map */
