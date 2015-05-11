@@ -1,14 +1,19 @@
-.authentication_register {
+.authentication {
   background: whitesmoke;
-  padding-top: 150px; }
-  .authentication_register .auth_logo {
+  padding-top: 150px;
+  -webkit-transition: all 1s ease 0s;
+  -moz-transition: all 1s ease 0s;
+  -ms-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s; }
+  .authentication .auth_logo {
     width: 200px;
     height: 35px;
     background: transparent url("../Materials/Materials.gif") 50% 0% no-repeat;
     background-size: 100%;
     margin: 0 auto 80px auto;
     opacity: 0.3; }
-  .authentication_register .panel {
+  .authentication .panel, .authentication .panel_logIn {
     background: white;
     padding: 30px 20px 0 30px;
     margin: 0;
@@ -25,13 +30,13 @@
     -webkit-box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1); }
-    .authentication_register .panel label {
+    .authentication .panel label, .authentication .panel_logIn label {
       display: block;
       color: rgba(0, 0, 0, 0.4);
       margin-top: 5px; }
-      .authentication_register .panel label:nth-child(7) {
+      .authentication .panel label:nth-child(7), .authentication .panel_logIn label:nth-child(7) {
         margin-top: 30px; }
-    .authentication_register .panel input {
+    .authentication .panel input, .authentication .panel_logIn input {
       margin: 5px 0 15px 0;
       width: 89%;
       padding: 10px;
@@ -42,17 +47,17 @@
       color: rgba(0, 0, 0, 0.4);
       font-size: 1em;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-      .authentication_register .panel input:focus {
+      .authentication .panel input:focus, .authentication .panel_logIn input:focus {
         font-family: Roboto-Regular;
         color: #444;
         font-size: 1em;
         border-bottom: 1px solid rgba(66, 174, 155, 0.7); }
-    .authentication_register .panel .password {
+    .authentication .panel .password, .authentication .panel_logIn .password {
       font-family: Roboto-Bold;
       font-size: 1.7em;
       color: rgba(0, 0, 0, 0.2);
       height: 19px; }
-    .authentication_register .panel button {
+    .authentication .panel button, .authentication .panel_logIn button {
       float: right;
       border: none;
       padding: 8px 22px;
@@ -64,14 +69,16 @@
       -moz-border-radius: 2pt;
       -ms-border-radius: 2pt;
       border-radius: 2pt; }
-      .authentication_register .panel button:hover {
+      .authentication .panel button:hover, .authentication .panel_logIn button:hover {
         background: #46c6b2; }
-      .authentication_register .panel button:active {
+      .authentication .panel button:active, .authentication .panel_logIn button:active {
         background: #39816f; }
-  .authentication_register .auth_wrapper {
+  .authentication .panel_logIn {
+    height: 260px; }
+  .authentication .auth_wrapper {
     width: 350px;
     margin: 0 auto; }
-  .authentication_register .panel_header {
+  .authentication .panel_header {
     padding: 13px 20px 13px 30px;
     background: white;
     margin-bottom: 20px;
@@ -83,7 +90,7 @@
     -webkit-box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1); }
-    .authentication_register .panel_header h2 {
+    .authentication .panel_header h2 {
       font-family: Roboto-Regular;
       font-size: 0.9em;
       letter-spacing: 0.4px;

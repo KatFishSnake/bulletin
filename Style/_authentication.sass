@@ -18,9 +18,10 @@
   -moz-box-shadow: $shd
   box-shadow: $shd
 
-.authentication_register
+.authentication
   background: whitesmoke
   padding-top: 150px
+  +transition(all 1s ease 0s)
 
   .auth_logo
     width: 200px
@@ -85,6 +86,9 @@
       &:active
         background: #39816f
 
+  .panel_logIn
+    @extend .panel
+    height: 260px
 
   .auth_wrapper
     width: 350px
@@ -104,6 +108,7 @@
       font-size: 0.9em
       letter-spacing: 0.4px
       color: #444
+
 
 .under_panel
   padding-left: 15px
