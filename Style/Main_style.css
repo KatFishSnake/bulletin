@@ -5,13 +5,16 @@
   -moz-transition: all 1s ease 0s;
   -ms-transition: all 1s ease 0s;
   -o-transition: all 1s ease 0s;
-  transition: all 1s ease 0s; }
+  transition: all 1s ease 0s;
+  padding-left: 15px;
+  line-height: 0.5em;
+  color: #888888; }
   .authentication .auth_logo {
     width: 200px;
-    height: 35px;
-    background: transparent url("../Materials/Materials.gif") 50% 0% no-repeat;
+    height: 75px;
+    background: transparent url("../Materials/Materials_v2.gif") 50% 0% no-repeat;
     background-size: 100%;
-    margin: 0 auto 80px auto;
+    margin: 0 auto 40px auto;
     opacity: 0.3; }
   .authentication .panel, .authentication .panel_logIn {
     background: white;
@@ -51,7 +54,7 @@
         font-family: Roboto-Regular;
         color: #444;
         font-size: 1em;
-        border-bottom: 1px solid rgba(66, 174, 155, 0.7); }
+        border-bottom: 1px solid rgba(68, 168, 222, 0.7); }
     .authentication .panel .password, .authentication .panel_logIn .password {
       font-family: Roboto-Bold;
       font-size: 1.7em;
@@ -62,7 +65,7 @@
       border: none;
       padding: 8px 22px;
       color: white;
-      background: #42ae9b;
+      background: #44A8DE;
       font-family: Roboto-Light;
       margin: 35px 15px 0 0;
       -webkit-border-radius: 2pt;
@@ -70,9 +73,9 @@
       -ms-border-radius: 2pt;
       border-radius: 2pt; }
       .authentication .panel button:hover, .authentication .panel_logIn button:hover {
-        background: #46c6b2; }
+        background: #47c0f6; }
       .authentication .panel button:active, .authentication .panel_logIn button:active {
-        background: #39816f; }
+        background: #31759d; }
   .authentication .panel_logIn {
     height: 260px; }
   .authentication .auth_wrapper {
@@ -82,7 +85,7 @@
     padding: 13px 20px 13px 30px;
     background: white;
     margin-bottom: 20px;
-    border-left: 6px solid #42ae9b;
+    border-left: 6px solid #44A8DE;
     -webkit-border-radius: 2pt;
     -moz-border-radius: 2pt;
     -ms-border-radius: 2pt;
@@ -95,17 +98,171 @@
       font-size: 0.9em;
       letter-spacing: 0.4px;
       color: #444; }
-
-.under_panel {
-  padding-left: 15px;
-  line-height: 0.5em;
-  color: #888888; }
-  .under_panel a {
+  .authentication a {
     text-decoration: none;
     font-size: 0.8em;
     color: #888888; }
-    .under_panel a:hover {
+    .authentication a:hover {
       text-decoration: underline; }
+
+.header {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  z-index: 999; }
+  .header .h_innercontainer {
+    padding: 15px 5% 5px 5%; }
+  .header .h_logo {
+    background: transparent url("../Materials/Logo_v2.gif") 50% 50% no-repeat;
+    background-size: 100%;
+    width: 130px;
+    height: 50px;
+    display: inline-block;
+    float: left; }
+  .header .h_nav {
+    display: inline-block;
+    width: -webkit-calc(100% - 130px);
+    width: calc(100% - 130px);
+    float: left;
+    padding: 15px 0 0 5%;
+    box-sizing: border-box; }
+    .header .h_nav li:nth-child(2), .header .h_nav li:nth-child(3) {
+      float: right;
+      padding: 0 20px; }
+    .header .h_nav li {
+      list-style: none;
+      display: inline-block; }
+    .header .h_nav a {
+      text-decoration: none;
+      font-family: Montserrat, sans-serif;
+      font-size: 1em;
+      color: #e8e8e8; }
+      .header .h_nav a:hover {
+        color: #f08a4a; }
+      .header .h_nav a:active {
+        color: #a75a35; }
+
+.homepage {
+  background-color: #f1f1f1; }
+  .homepage .home_banner_filters {
+    width: 100%; }
+    .homepage .home_banner_filters .h_banner_color {
+      width: 100%;
+      height: 800px;
+      position: relative; }
+      .homepage .home_banner_filters .h_banner_color .floating_colors {
+        position: absolute;
+        z-index: -10;
+        display: inline-flex;
+        width: 100%;
+        height: 800px; }
+      .homepage .home_banner_filters .h_banner_color .color_left, .homepage .home_banner_filters .h_banner_color .color_right, .homepage .home_banner_filters .h_banner_color .color_center {
+        height: 800px; }
+      .homepage .home_banner_filters .h_banner_color .color_left, .homepage .home_banner_filters .h_banner_color .color_right {
+        width: 20%;
+        background: #1f5372; }
+      .homepage .home_banner_filters .h_banner_color .color_center {
+        width: 60%;
+        background: #1e5070; }
+    .homepage .home_banner_filters .h_filters_color {
+      width: 100%;
+      background: #53a4dc;
+      height: 70px; }
+    .homepage .home_banner_filters .h_banner, .homepage .home_banner_filters .h_filters {
+      max-width: 960px;
+      margin: 0 auto; }
+    .homepage .home_banner_filters .h_banner {
+      padding-top: 100px; }
+      .homepage .home_banner_filters .h_banner h3 {
+        color: #53a4dc;
+        font-size: 2em;
+        margin: 5px; }
+      .homepage .home_banner_filters .h_banner h1 {
+        color: #8dc8e5;
+        font-size: 5em;
+        margin: 0; }
+    .homepage .home_banner_filters .center_forButtons {
+      width: 580px;
+      margin: 75px auto 0 auto; }
+      .homepage .home_banner_filters .center_forButtons button {
+        background: #f08a4a;
+        outline: none;
+        border: none;
+        padding: 18px 1px;
+        border-radius: 2pt;
+        margin: 0 6px;
+        -webkit-box-shadow: 0 5px 23px 0 rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 5px 23px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 5px 23px 0 rgba(0, 0, 0, 0.2);
+        -webkit-transition: box-shadow 0.3s ease;
+        -moz-transition: box-shadow 0.3s ease;
+        -ms-transition: box-shadow 0.3s ease;
+        -o-transition: box-shadow 0.3s ease;
+        transition: box-shadow 0.3s ease; }
+        .homepage .home_banner_filters .center_forButtons button:hover {
+          background: #ff984b;
+          box-shadow: none; }
+        .homepage .home_banner_filters .center_forButtons button:active {
+          background: #ab6036;
+          box-shadow: none; }
+      .homepage .home_banner_filters .center_forButtons button:last-child {
+        padding: 18px 4px; }
+      .homepage .home_banner_filters .center_forButtons a {
+        text-decoration: none;
+        color: white;
+        font-family: "Roboto-Bold", sans-serif;
+        font-size: 1.3em;
+        padding: 18px 49px; }
+      .homepage .home_banner_filters .center_forButtons i {
+        font-size: 0.9em;
+        color: rgba(255, 255, 255, 0.7); }
+    .homepage .home_banner_filters .h_filters {
+      padding-top: 24px; }
+      .homepage .home_banner_filters .h_filters ul {
+        width: 100%;
+        list-style: none;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: center; }
+      .homepage .home_banner_filters .h_filters li {
+        list-style: none;
+        width: 20%;
+        padding: 0 10px;
+        text-align: center; }
+      .homepage .home_banner_filters .h_filters a {
+        color: white;
+        text-decoration: none; }
+        .homepage .home_banner_filters .h_filters a:hover {
+          color: #3e3e3e; }
+        .homepage .home_banner_filters .h_filters a:active {
+          color: #000000; }
+  .homepage .home_body_projects {
+    width: 100%;
+    background-color: #f1f1f1; }
+    .homepage .home_body_projects .home_body_projects_innercontainer {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 50px 30px; }
+    .homepage .home_body_projects .proj_placeholder {
+      width: 100%;
+      height: 190px;
+      background: white;
+      margin: 10px 0;
+      -webkit-border-radius: 2pt;
+      -moz-border-radius: 2pt;
+      -ms-border-radius: 2pt;
+      border-radius: 2pt;
+      -webkit-box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1); }
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 0.7em;
+  color: #949494;
+  font-family: Roboto-Light; }
 
 @font-face {
   font-family: Roboto-Bold;
@@ -130,6 +287,16 @@
 @font-face {
   font-family: Roboto-Light;
   src: url("../libs/fonts/Roboto-Light.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Montserrat;
+  src: url("../libs/fonts/Montserrat-Regular.otf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("../libs/fonts/Montserrat-Bold.otf");
   font-weight: normal;
   font-style: normal; }
 html,
