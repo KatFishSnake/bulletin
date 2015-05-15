@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="Myapp">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,24 +10,13 @@
     <link rel="stylesheet" href="Style/font-awesome-animation.min.css">
     <link rel="stylesheet" type="text/css" href="Style/Main_style.css"/>
 </head>
-<body class="homepage">
+<body class="homepage" ng-controller="home_pageProjectsCtrl as myCtrl">
 
-    <div class="header">
 
-        <div class="h_innercontainer">
-            <div class="h_logo">
-                <a href="javascript:void(0)"></a>
-            </div>
-            <div class="h_nav">
-                <ul>
-                    <li><a href="javascript:void(0)">START</a></li>
-                    <li><a href="javascript:void(0)">LOG IN</a></li>
-                    <li><a href="javascript:void(0)">SIGN UP</a></li>
-                </ul>
-            </div>
-        </div>
+<!--HEADER-->
+<header-directive></header-directive>
 
-    </div>
+    <!-- BANNER-->
 
     <div class="home_banner_filters">
         <div class="h_banner_color">
@@ -49,6 +38,8 @@
 
             </section>
         </div>
+
+        <!-- FILTERS-->
         <div class="h_filters_color">
             <section class="h_filters">
                 <ul>
@@ -60,23 +51,33 @@
                 </ul>
             </section>
         </div>
+
     </div>
 
+
+    <!-- Projects have to be displayed with -->
     <div class="home_body_projects">
         <div class="home_body_projects_innercontainer">
-            <div class="proj_placeholder"></div>
-            <div class="proj_placeholder"></div>
-            <div class="proj_placeholder"></div>
-            <div class="proj_placeholder"></div>
-            <div class="proj_placeholder"></div>
-            <div class="proj_placeholder"></div>
-            <div class="proj_placeholder"></div>
+
+            <project-example ng-repeat="proj in projects_examples" info="proj"></project-example>
+
         </div>
     </div>
 
+
+    <!-- FOOTER-->
     <footer>
         <p>&copy; 2015, Barter Starter</p>
     </footer>
+<!--angular libs-->
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular/angular-route.min.js"></script>
+    <script src="libs/angular/angular-animate.min.js"></script>
+
+<!-- angular modules-->
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/controllers/home_pageProjectsCtrl.js"></script>
+    <script src="Scripts/directives/project_directive.js"></script>
 
 <!-- Google Analytics-->
     <script>
@@ -87,7 +88,6 @@
 
         ga('create', 'UA-62962703-1', 'auto');
         ga('send', 'pageview');
-
     </script>
 </body>
 </html>
