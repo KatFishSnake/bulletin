@@ -350,6 +350,287 @@ footer {
   color: #949494;
   font-family: Roboto-Light; }
 
+.constructor {
+  background-color: #f1f1f1;
+  padding-top: 90px; }
+  .constructor .qanda {
+    text-align: center; }
+  .constructor .proj_intro_title h1 {
+    text-align: center;
+    font-family: "Roboto-Light", sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 2.6em;
+    color: #252525; }
+  .constructor .h_logo {
+    background: transparent url("../Materials/Logo_v3.png") 50% 50% no-repeat;
+    background-size: 100%; }
+  .constructor .h_nav a {
+    color: #1f5372; }
+  .constructor .proj_intro_workLine {
+    width: 40%;
+    margin: 10px auto; }
+    .constructor .proj_intro_workLine .proj_intro_workLine_line {
+      width: 100%;
+      background: lightblue;
+      height: 12px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      padding: 2px; }
+      .constructor .proj_intro_workLine .proj_intro_workLine_line div {
+        width: 20%;
+        background: #78a5da;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 8px; }
+    .constructor .proj_intro_workLine .proj_intro_workLine_items {
+      display: inline-flex;
+      width: 100%;
+      margin-bottom: 10px; }
+      .constructor .proj_intro_workLine .proj_intro_workLine_items .item {
+        background: #53a4dc;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 15px;
+        font-family: "Roboto-Light", sans-serif;
+        font-size: 1.1em;
+        position: relative;
+        margin-left: 15%; }
+        .constructor .proj_intro_workLine .proj_intro_workLine_items .item:after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid #53a4dc;
+          top: -7px;
+          right: 29%; }
+      .constructor .proj_intro_workLine .proj_intro_workLine_items .item:first-child:before {
+        content: "";
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background: #272727 url("../Materials/Materials_v2.gif") 103% 109% no-repeat;
+        background-size: 255%;
+        top: 0;
+        left: 0; }
+  .constructor .panel, .constructor .authentication .panel_logIn, .authentication .constructor .panel_logIn {
+    background: white;
+    width: 960px;
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 30px;
+    -webkit-border-radius: 2pt;
+    -moz-border-radius: 2pt;
+    -ms-border-radius: 2pt;
+    border-radius: 2pt;
+    -webkit-box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1); }
+    .constructor .panel .proj_intro_img_addInfo, .constructor .authentication .panel_logIn .proj_intro_img_addInfo, .authentication .constructor .panel_logIn .proj_intro_img_addInfo {
+      display: flex; }
+      .constructor .panel .proj_intro_img_addInfo img, .constructor .authentication .panel_logIn .proj_intro_img_addInfo img, .authentication .constructor .panel_logIn .proj_intro_img_addInfo img {
+        width: 60%;
+        height: 500px;
+        -webkit-border-radius: 3pt;
+        -moz-border-radius: 3pt;
+        -ms-border-radius: 3pt;
+        border-radius: 3pt; }
+    .constructor .panel .proj_intro_img_addInfo_right, .constructor .authentication .panel_logIn .proj_intro_img_addInfo_right, .authentication .constructor .panel_logIn .proj_intro_img_addInfo_right {
+      width: 40%;
+      height: 170px;
+      text-align: right;
+      padding: 49px 90px 0 0;
+      position: relative;
+      box-sizing: border-box; }
+      .constructor .panel .proj_intro_img_addInfo_right span, .constructor .authentication .panel_logIn .proj_intro_img_addInfo_right span, .authentication .constructor .panel_logIn .proj_intro_img_addInfo_right span {
+        font-size: 1.3em;
+        font-family: "Roboto-Light", sans-serif;
+        text-align: left;
+        display: block;
+        padding-left: 35%; }
+      .constructor .panel .proj_intro_img_addInfo_right .days_string, .constructor .authentication .panel_logIn .proj_intro_img_addInfo_right .days_string, .authentication .constructor .panel_logIn .proj_intro_img_addInfo_right .days_string {
+        display: inline-block;
+        padding: 0;
+        margin-left: -3px;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 1.5em;
+        color: #515151; }
+      .constructor .panel .proj_intro_img_addInfo_right h2, .constructor .authentication .panel_logIn .proj_intro_img_addInfo_right h2, .authentication .constructor .panel_logIn .proj_intro_img_addInfo_right h2 {
+        margin: 10px 0 70px 0;
+        text-align: right;
+        font-family: "Roboto-Light", sans-serif;
+        font-size: 5.5em;
+        color: #252525;
+        display: inline-block; }
+      .constructor .panel .proj_intro_img_addInfo_right img, .constructor .authentication .panel_logIn .proj_intro_img_addInfo_right img, .authentication .constructor .panel_logIn .proj_intro_img_addInfo_right img {
+        width: 80px;
+        height: 80px;
+        margin-left: 18px;
+        margin-right: 10px;
+        -webkit-border-radius: 3pt;
+        -moz-border-radius: 3pt;
+        -ms-border-radius: 3pt;
+        border-radius: 3pt; }
+      .constructor .panel .proj_intro_img_addInfo_right div, .constructor .authentication .panel_logIn .proj_intro_img_addInfo_right div, .authentication .constructor .panel_logIn .proj_intro_img_addInfo_right div {
+        display: flex; }
+        .constructor .panel .proj_intro_img_addInfo_right div span, .constructor .authentication .panel_logIn .proj_intro_img_addInfo_right div span, .authentication .constructor .panel_logIn .proj_intro_img_addInfo_right div span {
+          font-size: 0.7em;
+          text-align: right;
+          padding: 12px 0 5px 0; }
+        .constructor .panel .proj_intro_img_addInfo_right div h4, .constructor .authentication .panel_logIn .proj_intro_img_addInfo_right div h4, .authentication .constructor .panel_logIn .proj_intro_img_addInfo_right div h4 {
+          margin: 0;
+          font-family: "Roboto-Light", sans-serif; }
+        .constructor .panel .proj_intro_img_addInfo_right div div, .constructor .authentication .panel_logIn .proj_intro_img_addInfo_right div div, .authentication .constructor .panel_logIn .proj_intro_img_addInfo_right div div {
+          width: 60%;
+          display: block; }
+    .constructor .panel .proj_intro_description, .constructor .authentication .panel_logIn .proj_intro_description, .authentication .constructor .panel_logIn .proj_intro_description {
+      font-family: "Roboto-Light", sans-serif;
+      margin: 60px 0; }
+  .constructor .about_team img {
+    width: 370px;
+    height: 266px;
+    display: inline-block;
+    -webkit-border-radius: 3pt;
+    -moz-border-radius: 3pt;
+    -ms-border-radius: 3pt;
+    border-radius: 3pt; }
+  .constructor .about_team .about_team_title {
+    margin: 0 0 11px 0;
+    font-family: "Roboto-Light", sans-serif; }
+  .constructor .about_team .about_team_description {
+    display: inline-block;
+    width: 571px;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 0 0 0 33px; }
+  .constructor .about_team_container {
+    display: flex;
+    font-family: "Roboto-Light", sans-serif; }
+  .constructor .job_list {
+    min-height: 200px; }
+    .constructor .job_list table {
+      width: 100%; }
+    .constructor .job_list .item_identical {
+      background: #53a4dc;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      box-sizing: border-box;
+      padding-top: 15px;
+      font-family: "Roboto-Light", sans-serif;
+      font-size: 1.1em;
+      position: relative; }
+    .constructor .job_list tr:nth-child(2) .item_identical:before {
+      content: "";
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background: #272727 url("../Materials/Materials_v2.gif") 103% 109% no-repeat;
+      background-size: 255%;
+      top: 0;
+      left: 0; }
+    .constructor .job_list th {
+      padding: 5px 5px 5px 5px;
+      box-sizing: border-box;
+      background: #f2f2f2;
+      border-bottom: 2px solid white;
+      border-right: 1px solid white;
+      font-family: "Roboto-Light", sans-serif; }
+    .constructor .job_list td {
+      border-bottom: 2px solid white;
+      border-top: 2px solid white;
+      border-right: 1px solid white; }
+    .constructor .job_list td:nth-child(2) div {
+      padding: 5px 10px 5px 15px;
+      box-sizing: border-box;
+      background: #f8f8f8;
+      margin-bottom: 3px; }
+    .constructor .job_list th:first-child, .constructor .job_list td:first-child {
+      width: 5%; }
+    .constructor .job_list td:first-child {
+      background: white; }
+    .constructor .job_list th:nth-child(2), .constructor .job_list td:nth-child(2) {
+      width: 50%; }
+    .constructor .job_list th:nth-child(2), .constructor .job_list th:nth-child(3) {
+      text-align: left;
+      padding-left: 15px; }
+    .constructor .job_list td:nth-child(2) h3 {
+      font-family: "Roboto-Light", sans-serif;
+      margin: 10px 0 20px 0; }
+    .constructor .job_list td:nth-child(2) p {
+      margin: 0;
+      font-size: 0.8em; }
+    .constructor .job_list td:nth-child(3) {
+      text-align: center;
+      position: relative;
+      background: #f8f8f8;
+      border-bottom-right-radius: 8px;
+      border-top-right-radius: 8px; }
+      .constructor .job_list td:nth-child(3) button {
+        position: absolute;
+        height: 100%;
+        width: 50px;
+        right: 0;
+        top: 0;
+        background: #a4d1ed;
+        text-align: center;
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        border: none;
+        -webkit-transition: background-position 1s ease 0s;
+        -moz-transition: background-position 1s ease 0s;
+        -ms-transition: background-position 1s ease 0s;
+        -o-transition: background-position 1s ease 0s;
+        transition: background-position 1s ease 0s; }
+        .constructor .job_list td:nth-child(3) button:hover:after {
+          background-position: -15% 43%; }
+        .constructor .job_list td:nth-child(3) button:after {
+          content: "";
+          background: transparent url("../Materials/Materials_v2.gif") 53% 43% no-repeat;
+          background-size: 244%;
+          width: 49px;
+          height: 38px;
+          position: absolute;
+          top: 40%;
+          left: 0;
+          opacity: 0.3; }
+        .constructor .job_list td:nth-child(3) button a {
+          text-decoration: none;
+          color: white;
+          font-family: "Roboto-Regular", sans-serif;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0; }
+  .constructor .qanda {
+    max-width: 960px;
+    width: 400px;
+    height: 140px;
+    box-shadow: none;
+    background-color: transparent;
+    margin-bottom: 200px; }
+    .constructor .qanda h3 {
+      box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
+      background: white;
+      height: 73px;
+      padding: 26px 0 0 0;
+      box-sizing: border-box;
+      font-family: "Roboto-light", sans-serif; }
+    .constructor .qanda h4 {
+      font-family: "Roboto-Light", sans-serif;
+      font-size: 0.9em; }
+
 @font-face {
   font-family: Roboto-Bold;
   src: url("../libs/fonts/Roboto-Bold.ttf");

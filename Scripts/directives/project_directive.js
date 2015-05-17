@@ -20,7 +20,13 @@ app.directive("projectExample", [function(){
 app.directive("headerDirective", [function(){
     return{
         templateUrl: "Scripts/html/header_directive.html",
-        restrict: "E",
-        transclude: true
+        restrict: "E"
+    }
+}]);
+
+app.directive("bannerDirective", [function(){
+    return{
+        templateUrl: "Scripts/html/banner_directive.html",
+        restrict: "E"
     }
 }]);

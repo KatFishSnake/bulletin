@@ -1,0 +1,312 @@
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+=transition($trans)
+  -webkit-transition: $trans
+  -moz-transition: $trans
+  -ms-transition: $trans
+  -o-transition: $trans
+  transition: $trans
+
+=box-shadow($shd)
+  -webkit-box-shadow: $shd
+  -moz-box-shadow: $shd
+  box-shadow: $shd
+
+@mixin calc($property, $expression)
+  #{$property}: -webkit-calc(#{$expression})
+  #{$property}: calc(#{$expression})
+
+
+.constructor
+  background-color: #f1f1f1
+  padding-top: 90px
+  .qanda
+    text-align: center
+  .proj_intro_title
+    h1
+      text-align: center
+      font-family: "Roboto-Light", sans-serif
+      letter-spacing: 1.5px
+      font-size: 2.6em
+      color: #252525
+  .h_logo
+    background: transparent url("../Materials/Logo_v3.png") 50% 50% no-repeat
+    background-size: 100%
+  .h_nav
+    a
+      color: #1f5372
+
+  .proj_intro_workLine
+    width: 40%
+    margin: 10px auto
+    .proj_intro_workLine_line
+      width: 100%
+      background: lightblue
+      height: 12px
+      border-radius: 10px
+      margin-bottom: 10px
+      box-sizing: border-box
+      padding: 2px
+      div
+        width: 20%
+        background: #78a5da
+        border-bottom-left-radius: 10px
+        border-top-left-radius: 10px
+        height: 8px
+    .proj_intro_workLine_items
+      display: inline-flex
+      width: 100%
+      margin-bottom: 10px
+      .item
+        background: #53a4dc
+        color: white
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        text-align: center
+        box-sizing: border-box
+        padding-top: 15px
+        font-family: "Roboto-Light", sans-serif
+        font-size: 1.1em
+        position: relative
+        margin-left: 15%
+        &:after
+          content: ''
+          position: absolute
+          width: 0
+          height: 0
+          border-left: 10px solid transparent
+          border-right: 10px solid transparent
+          border-bottom: 10px solid #53a4dc
+          top: -7px
+          right: 29%
+      .item:first-child
+        &:before
+          content: ""
+          position: absolute
+          width: 17px
+          height: 17px
+          border-radius: 50%
+          background: #272727 url("../Materials/Materials_v2.gif") 103% 109% no-repeat
+          background-size: 255%
+          top: 0
+          left: 0
+
+  .panel
+    background: white
+    width: 960px
+    margin: 50px auto
+    box-sizing: border-box
+    padding: 30px
+    +border-radius(2pt)
+    +box-shadow(0 3px 8px 1px rgba(0,0,0,0.1))
+    .proj_intro_img_addInfo
+      display: flex
+      img
+        width: 60%
+        height: 500px
+        +border-radius(3pt)
+    .proj_intro_img_addInfo_right
+      width: 40%
+      height: 170px
+      text-align: right
+      padding: 49px 90px 0 0
+      position: relative
+      box-sizing: border-box
+      span
+        font-size: 1.3em
+        font-family: "Roboto-Light", sans-serif
+        text-align: left
+        display: block
+        padding-left: 35%
+      .days_string
+        display: inline-block
+        padding: 0
+        margin-left: -3px
+        font-family: "Roboto-Regular", sans-serif
+        font-size: 1.5em
+        color: #515151
+      h2
+        margin: 10px 0 70px 0
+        text-align: right
+        font-family: "Roboto-Light", sans-serif
+        font-size: 5.5em
+        color: #252525
+        display: inline-block
+      img
+        width: 80px
+        height: 80px
+        margin-left: 18px
+        margin-right: 10px
+        +border-radius(3pt)
+      div
+        display: flex
+        span
+
+          font-size: 0.7em
+          text-align: right
+          padding: 12px 0 5px 0
+        h4
+          margin: 0
+          font-family: "Roboto-Light", sans-serif
+        div
+          width: 60%
+          display: block
+
+
+
+
+    .proj_intro_description
+      font-family: "Roboto-Light", sans-serif
+      margin: 60px 0
+
+
+  .about_team
+    img
+      width: 370px
+      height: 266px
+      display: inline-block
+      +border-radius(3pt)
+    .about_team_title
+      margin: 0 0 11px 0
+      font-family: "Roboto-Light", sans-serif
+
+    .about_team_description
+      display: inline-block
+      width: 571px
+      vertical-align: top
+      box-sizing: border-box
+      padding: 0 0 0 33px
+  .about_team_container
+    display: flex
+    font-family: "Roboto-Light", sans-serif
+
+  .job_list
+    min-height: 200px
+    table
+      width: 100%
+    .item_identical
+      background: #53a4dc
+      color: white
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      text-align: center
+      box-sizing: border-box
+      padding-top: 15px
+      font-family: "Roboto-Light", sans-serif
+      font-size: 1.1em
+      position: relative
+
+    tr:nth-child(2) .item_identical
+      &:before
+        content: ""
+        position: absolute
+        width: 17px
+        height: 17px
+        border-radius: 50%
+        background: #272727 url("../Materials/Materials_v2.gif") 103% 109% no-repeat
+        background-size: 255%
+        top: 0
+        left: 0
+    th
+      padding: 5px 5px 5px 5px
+      box-sizing: border-box
+      background: #f2f2f2
+      border-bottom: 2px solid white
+      border-right: 1px solid white
+      font-family: "Roboto-Light", sans-serif
+    td
+      border-bottom: 2px solid white
+      border-top: 2px solid white
+      border-right: 1px solid white
+
+    td:nth-child(2)
+      div
+        padding: 5px 10px 5px 15px
+        box-sizing: border-box
+        background: #f8f8f8
+        margin-bottom: 3px
+    th:first-child, td:first-child
+      width: 5%
+    td:first-child
+      background: white
+    th:nth-child(2), td:nth-child(2)
+      width: 50%
+    th:nth-child(2), th:nth-child(3)
+      text-align: left
+      padding-left: 15px
+    td:nth-child(2)
+      h3
+        font-family: "Roboto-Light", sans-serif
+        margin: 10px 0 20px 0
+      p
+        margin: 0
+        font-size: 0.8em
+    td:nth-child(3)
+      text-align: center
+      position: relative
+      background: #f8f8f8
+      border-bottom-right-radius: 8px
+      border-top-right-radius: 8px
+      button
+        position: absolute
+        height: 100%
+        width: 50px
+        right: 0
+        top: 0
+        background: #a4d1ed
+        text-align: center
+        border-bottom-right-radius: 8px
+        border-top-right-radius: 8px
+        border: none
+        +transition(background-position 1s ease 0s)
+        &:hover
+          &:after
+            background-position: -15% 43%
+        &:after
+          content: ""
+          background: transparent url("../Materials/Materials_v2.gif") 53% 43% no-repeat
+          background-size: 244%
+          width: 49px
+          height: 38px
+          position: absolute
+          top: 40%
+          left: 0
+          opacity: 0.3
+
+        a
+          text-decoration: none
+          color: white
+          font-family: "Roboto-Regular", sans-serif
+          position: absolute
+          width: 100%
+          height: 100%
+          top: 0
+          left: 0
+
+
+
+  .qanda
+    max-width: 960px
+    width: 400px
+    height: 140px
+    box-shadow: none
+    background-color: transparent
+    margin-bottom: 200px
+    h3
+      box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1)
+      background: white
+      height: 73px
+      padding: 26px 0 0 0
+      box-sizing: border-box
+      font-family: "Roboto-light", sans-serif
+    h4
+      font-family: "Roboto-Light", sans-serif
+      font-size: 0.9em
+
+
