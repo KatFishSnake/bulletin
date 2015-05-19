@@ -9,6 +9,34 @@
   padding-left: 15px;
   line-height: 0.5em;
   color: #888888; }
+  .authentication .warning {
+    position: absolute;
+    margin: 12px;
+    padding: 14px;
+    background: lightpink;
+    color: #444;
+    -webkit-border-radius: 2pt;
+    -moz-border-radius: 2pt;
+    -ms-border-radius: 2pt;
+    border-radius: 2pt;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    -ms-transition: all 1s ease 0s;
+    -o-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+    -webkit-box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1); }
+    .authentication .warning:before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-right: 10px solid lightpink;
+      border-bottom: 10px solid transparent;
+      top: 8px;
+      left: -10px; }
   .authentication .auth_logo {
     width: 200px;
     height: 75px;
@@ -43,7 +71,7 @@
       margin: 5px 0 15px 0;
       width: 89%;
       padding: 10px;
-      font-family: Roboto-Light-Italic;
+      font-family: "Roboto-Light-Italic", sans-serif;
       outline: none;
       border: none;
       box-shadow: none;
@@ -51,13 +79,13 @@
       font-size: 1em;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
       .authentication .panel input:focus, .authentication .panel_logIn input:focus {
-        font-family: Roboto-Regular;
+        font-family: "Roboto-Regular", sans-serif;
         color: #444;
         font-size: 1em;
         border-bottom: 1px solid rgba(68, 168, 222, 0.7); }
     .authentication .panel .password, .authentication .panel_logIn .password {
-      font-family: Roboto-Bold;
-      font-size: 1.7em;
+      font-family: "Roboto-Light-Italic", sans-serif;
+      font-size: 1em;
       color: rgba(0, 0, 0, 0.2);
       height: 19px; }
     .authentication .panel button, .authentication .panel_logIn button {
@@ -66,7 +94,7 @@
       padding: 8px 22px;
       color: white;
       background: #44A8DE;
-      font-family: Roboto-Light;
+      font-family: "Roboto-Light", sans-serif;
       margin: 35px 15px 0 0;
       -webkit-border-radius: 2pt;
       -moz-border-radius: 2pt;
@@ -94,7 +122,7 @@
     -moz-box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 8px 1px rgba(0, 0, 0, 0.1); }
     .authentication .panel_header h2 {
-      font-family: Roboto-Regular;
+      font-family: "Roboto-Regular", sans-serif;
       font-size: 0.9em;
       letter-spacing: 0.4px;
       color: #444; }

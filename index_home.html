@@ -40,7 +40,7 @@
     <div class="home_body_projects">
         <div class="home_body_projects_innercontainer">
 
-            <project-example ng-repeat="proj in projects_examples" info="proj"></project-example>
+            <project-example ng-repeat="proj in myCtrl.projects_examples" info="proj"></project-example>
 
         </div>
     </div>
@@ -57,7 +57,7 @@
 
 <!-- angular modules-->
     <script src="Scripts/app.js"></script>
-    <script src="Scripts/controllers/home_pageProjectsCtrl.js"></script>
+    <script src="Scripts/controllers/mainController.js"></script>
     <script src="Scripts/directives/project_directive.js"></script>
 
 <!-- Google Analytics-->
